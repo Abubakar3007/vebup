@@ -63,7 +63,7 @@ export function Navbar() {
                   to={link.to}
                   className={cn(
                     "relative rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
-                    active ? "text-foreground" : "text-muted-foreground hover:text-foreground",
+                    active ? "text-white bg-primary" : "text-muted-foreground hover:text-foreground",
                   )}
                 >
                   {link.label}

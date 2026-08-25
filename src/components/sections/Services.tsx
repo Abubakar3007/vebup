@@ -12,8 +12,8 @@ export function Services({ detailed = false }: { detailed?: boolean }) {
       <div className="container-page">
         <SectionHeading
           eyebrow="Services"
-          title={<span id="services-title">Everything Your Business Needs Online</span>}
-          description="From your first website to ongoing growth work — one team, one clear process."
+          title={<span id="services-title">Everything Your Business Needs to Grow Online</span>}
+          description="We help businesses build a strong online presence, reach more customers, and turn digital traffic into real business opportunities."
         />
 
         <StaggerGroup className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">

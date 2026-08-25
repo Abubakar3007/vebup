@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 import { CountUp } from "@/components/motion/CountUp";
 import heroMockup from "@/assets/hero-mockup.jpg";
 
-const words = ["Get Your Business Online."];
-const line2 = ["Build.", "Grow.", "Stand Out."];
+const words = ["Take Your Business Online."];
+const line2 = ["Reach.", "Grow.", "Stand Out."];
 
 export function Hero() {
   const reduced = useReducedMotion();
@@ -35,7 +35,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 rounded-full border border-border bg-background/80 px-3.5 py-1.5 text-xs font-semibold text-accent-foreground shadow-soft backdrop-blur"
           >
             <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Web design &amp; development for small businesses
+            Digital solutions for growing businesse
           </motion.span>
 
           <h1
@@ -74,8 +74,9 @@ export function Hero() {
             transition={{ duration: 0.6, ease, delay: 0.45 }}
             className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg"
           >
-            We design and build modern, fast and professional websites for small businesses that
-            want to grow online.
+            We help businesses build a strong online presence with modern
+            websites and digital solutions designed to reach more customers,
+            generate opportunities and support long-term growth.
           </motion.p>
 
           <motion.div
@@ -104,12 +105,14 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.7 }}
             className="mt-8 flex flex-wrap gap-x-6 gap-y-2"
           >
-            {["Mobile-first build", "SEO foundations", "Launch in 2–4 weeks"].map((item) => (
-              <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
-                <CheckCircle2 className="h-4 w-4 text-primary" aria-hidden="true" />
-                {item}
-              </li>
-            ))}
+            {["Built for mobile",
+              "SEO-ready foundations",
+              "Designed to generate leads",].map((item) => (
+                <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <CheckCircle2 className="h-4 w-4 text-primary" aria-hidden="true" />
+                  {item}
+                </li>
+              ))}
           </motion.ul>
         </div>
 

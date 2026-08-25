@@ -140,7 +140,7 @@ function ContactPage() {
               </span>
               <h2 className="mt-4 text-base font-semibold text-foreground">Response time</h2>
               <p className="mt-1 text-sm text-muted-foreground">
-                Within one working day, Monday to Saturday.
+                We typically respond within one business day, Monday to Saturday.
               </p>
             </div>
             <div className="card-premium p-6">
@@ -152,8 +152,7 @@ function ContactPage() {
               </span>
               <h2 className="mt-4 text-base font-semibold text-foreground">What happens next</h2>
               <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                A short discovery call, a clear scope and timeline, then a fixed quote before any
-                work starts.
+                We’ll discuss your requirements, define the scope and timeline, then provide a clear quote before we get started.
               </p>
             </div>
           </Reveal>

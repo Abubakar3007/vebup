@@ -57,14 +57,27 @@ export function Portfolio({ limit }: { limit?: number }) {
                     </li>
                   ))}
                 </ul>
+
                 <a
-                  href={`mailto:info@vebup.info?subject=${encodeURIComponent(`${project.name} concept — tell me more`)}`}
+                  href={`mailto:info@vebup.info?subject=${encodeURIComponent(`${project.name} Website Inquiry`)}`}
+                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold mr-6 transition-all duration-300 group-hover:gap-2.5 bg-primary text-white px-4 rounded-md py-2"
+                >
+                  Let's Talk
+                  <span className="sr-only">Contact us about {project.name}</span>
+                </a>
+
+                <a
+                  href={project.visit}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-all duration-300 group-hover:gap-2.5"
                 >
-                  View project
+                  View Live Demo
                   <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-                  <span className="sr-only">details for {project.name}</span>
+                  <span className="sr-only">View {project.name} live demo</span>
                 </a>
+
+
               </div>
             </motion.article>
           ))}

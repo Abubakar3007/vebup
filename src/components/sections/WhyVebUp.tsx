@@ -7,7 +7,7 @@ import { CountUp } from "@/components/motion/CountUp";
 import { Eyebrow } from "@/components/site/SectionHeading";
 
 const stats = [
-  { value: 2, suffix: "–4 wks", label: "Typical delivery time" },
+  { value: 1, suffix: "–2 wks", label: "Typical delivery time" },
   { value: 100, suffix: "%", label: "Mobile-first builds" },
   { value: 90, suffix: "+", label: "Performance score target" },
 ];
@@ -25,8 +25,8 @@ export function WhyVebUp() {
             Why Businesses Choose VebUp
           </h2>
           <p className="mt-4 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg">
-            We work the way small business owners need: focused scope, honest timelines and a
-            website that keeps earning after launch.
+            We combine strategy, design and technology to help businesses build a stronger
+            online presence and create more opportunities for growth.
           </p>
 
           <div className="mt-8 grid gap-3 sm:grid-cols-3">

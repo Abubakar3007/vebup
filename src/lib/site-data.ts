@@ -14,20 +14,20 @@ import {
   type LucideIcon,
 } from "lucide-react";
 
-import workRestaurant from "@/assets/work-restaurant.jpg";
-import workSalon from "@/assets/work-salon.jpg";
-import workGym from "@/assets/work-gym.jpg";
-import workServices from "@/assets/work-services.jpg";
-import workConsultant from "@/assets/work-consultant.jpg";
-import workEcommerce from "@/assets/work-ecommerce.jpg";
+import workRestaurant from "@/assets/work-restaurant.png";
+import workSalon from "@/assets/work-salon.png";
+import workGym from "@/assets/work-gym.png";
+import workServices from "@/assets/work-services.png";
+import workConsultant from "@/assets/work-consultant.png";
+import workEcommerce from "@/assets/work-services.png";
 
 export const SITE = {
   name: "VebUp",
-  tagline: "We Build. You Grow.",
+  tagline: "Your Digital Partner for Business Growth.",
   email: "info@vebup.info",
   domain: "vebup.in",
   description:
-    "VebUp helps small businesses build a professional online presence through modern website design and development.",
+    "We help businesses build a stronger online presence with modern websites and digital solutions designed to reach more customers, generate opportunities and support long- term growth.",
 };
 
 export type Service = {
@@ -42,116 +42,149 @@ export const services: Service[] = [
   {
     slug: "business-websites",
     title: "Business Websites",
-    description: "Professional websites designed specifically for your business.",
+    description:
+      "Conversion-focused websites that establish your business online and turn visitors into enquiries.",
     icon: Layout,
     points: [
-      "Custom design built around your services",
-      "Clear structure that answers customer questions",
-      "Contact and enquiry flows that actually convert",
+      "Custom design built around your business and services",
+      "Clear structure that builds trust and answers customer questions",
+      "Contact, enquiry and lead flows designed to convert",
     ],
   },
   {
     slug: "landing-pages",
     title: "Landing Pages",
-    description: "High-converting landing pages for campaigns, products and services.",
+    description:
+      "Focused landing pages built to capture leads and drive specific business goals.",
     icon: Rocket,
     points: [
-      "Single-goal layout focused on one action",
-      "Fast loading for paid traffic",
-      "Built-in tracking for campaign performance",
+      "Single-goal layout focused on conversion",
+      "Optimised for campaigns, ads, products and services",
+      "Lead capture and tracking to measure performance",
     ],
   },
   {
     slug: "ecommerce",
     title: "E-commerce Websites",
-    description: "Modern online stores that are easy to use and designed to convert.",
+    description:
+      "Complete online stores designed to showcase products and help you sell online.",
     icon: ShoppingBag,
     points: [
-      "Clean product and category pages",
-      "Smooth cart and checkout experience",
-      "Payment and shipping integrations",
+      "Clean product and category experiences",
+      "Smooth cart, checkout and payment flows",
+      "Payment, shipping and essential business integrations",
     ],
   },
   {
     slug: "redesign",
     title: "Website Redesign",
-    description: "Transform outdated websites into modern digital experiences.",
+    description:
+      "Transform an outdated website into a modern, clear and conversion-focused experience.",
     icon: Paintbrush,
     points: [
-      "Modern visual identity and layout",
-      "Content restructured for clarity",
-      "Existing rankings preserved with redirects",
+      "Modern design aligned with your brand",
+      "Improved structure and customer journey",
+      "Better mobile experience, speed and usability",
     ],
   },
   {
     slug: "seo-performance",
-    title: "SEO & Performance",
-    description: "Technical optimization for better visibility and faster websites.",
+    title: "SEO & Online Visibility",
+    description:
+      "Improve your website's visibility, performance and ability to reach the right customers.",
     icon: Gauge,
     points: [
-      "Core Web Vitals and speed tuning",
-      "On-page SEO, metadata and schema",
-      "Image, script and asset optimisation",
+      "Faster loading and improved Core Web Vitals",
+      "On-page SEO, metadata and technical optimisation",
+      "Better structure to help customers find your business",
     ],
   },
   {
     slug: "maintenance",
-    title: "Maintenance & Support",
-    description: "Ongoing updates, improvements, security and technical support.",
+    title: "Growth & Ongoing Support",
+    description:
+      "Continuous improvements and technical support to help your business grow online.",
     icon: LifeBuoy,
     points: [
-      "Content updates and small design changes",
-      "Security patches and uptime checks",
-      "Monthly improvements as you grow",
+      "Website updates and ongoing improvements",
+      "Security, performance and technical maintenance",
+      "New features and integrations as your business grows",
     ],
   },
 ];
 
 export const trustPoints = [
-  { title: "Fast websites", description: "Optimised builds that load in a blink.", icon: Zap },
   {
-    title: "Mobile responsive",
-    description: "Designed for phones first, not squeezed later.",
+    title: "Fast & Reliable",
+    description: "Optimised for speed, performance and a smooth user experience.",
+    icon: Zap,
+  },
+  {
+    title: "Built for Mobile",
+    description: "Designed to work seamlessly on the devices your customers use most.",
     icon: Smartphone,
   },
-  { title: "SEO ready", description: "Clean structure search engines understand.", icon: Search },
-  { title: "Secure", description: "HTTPS, hardened forms and safe integrations.", icon: ShieldCheck },
-  { title: "Modern design", description: "Premium visuals that build instant trust.", icon: Sparkles },
-  { title: "Easy to maintain", description: "Update content without touching code.", icon: Wrench },
+  {
+    title: "Built for Visibility",
+    description: "SEO-friendly foundations that help your business get discovered online.",
+    icon: Search,
+  },
+  {
+    title: "Secure & Trusted",
+    description: "Secure forms, safe integrations and reliable web technologies.",
+    icon: ShieldCheck,
+  },
+  {
+    title: "Designed to Build Trust",
+    description: "Modern, professional design that makes a strong first impression.",
+    icon: Sparkles,
+  },
+  {
+    title: "Built to Grow",
+    description: "Flexible solutions that can evolve as your business needs change.",
+    icon: Wrench,
+  },
 ];
 
 export const whyPoints = [
   {
-    title: "Custom design",
-    description: "No recycled templates — every layout is designed around your business.",
+    title: "Built Around Your Business",
+    description:
+      "Every website and solution is planned around your goals, customers and the way your business works.",
   },
   {
-    title: "Mobile-first development",
-    description: "Most local customers arrive on a phone, so that is where we start.",
+    title: "Designed to Convert",
+    description:
+      "Clear messaging and calls to action help turn visitors into enquiries and potential customers.",
   },
   {
-    title: "Fast performance",
-    description: "Lean code, optimised images and quick first paint on real networks.",
+    title: "Mobile-First Experience",
+    description:
+      "Your online presence is built to work seamlessly on the devices your customers use most.",
   },
   {
-    title: "SEO-friendly structure",
-    description: "Semantic markup, metadata and sitemaps set up from day one.",
+    title: "Fast & Reliable",
+    description: "Optimised performance and clean development for a faster, smoother user experience.",
   },
   {
-    title: "Conversion-focused layouts",
-    description: "Clear calls to action so visitors know exactly what to do next.",
+    title: "Built for Visibility",
+    description:
+      "SEO-friendly structure and technical foundations help your business become easier to discover online.",
   },
   {
-    title: "Clear communication",
-    description: "Plain language updates, fixed checkpoints and no technical jargon.",
+    title: "Ready to Grow",
+    description:
+      "Your website can evolve with new services, features and integrations as your business grows.",
   },
   {
-    title: "Affordable for small businesses",
-    description: "Packages scoped so growing businesses can start without overspending.",
+    title: "Clear Communication",
+    description:
+      "Simple updates, clear timelines and straightforward communication throughout the project.",
   },
   {
-    title: "Post-launch support",
-    description: "We stay available after launch for fixes, tweaks and improvements.",
+    title: "Support Beyond Launch",
+    description:
+      "We stay available for updates, improvements and ongoing support after your website goes live.",
   },
 ];
 
@@ -159,23 +192,23 @@ export const processSteps = [
   {
     number: "01",
     title: "Discover",
-    description: "We understand your business, customers and goals.",
+    description: "We learn about your business, goals, and audience.",
   },
   {
     number: "02",
     title: "Design",
-    description: "We create a clean and professional website experience.",
+    description: "We create a clear, modern design built around your brand.",
   },
   {
     number: "03",
     title: "Build",
-    description: "We develop a fast, responsive and reliable website.",
+    description: "We turn the approved design into a fast, responsive website.",
   },
-  { number: "04", title: "Launch", description: "We test everything and launch your website." },
+  { number: "04", title: "Launch", description: "After testing everything, we launch your website with confidence." },
   {
     number: "05",
     title: "Grow",
-    description: "We help you improve and maintain your online presence.",
+    description: "We help you improve, update, and grow your online presence.",
   },
 ];
 
@@ -185,6 +218,7 @@ export type Project = {
   category: string;
   description: string;
   image: string;
+  visit: string;
   tags: string[];
 };
 
@@ -193,54 +227,54 @@ export const projects: Project[] = [
     slug: "saffron-table",
     name: "Saffron Table",
     category: "Restaurant",
-    description:
-      "A menu-led restaurant site with table enquiries, gallery and location details built for hungry mobile visitors.",
+    description: "A menu-led restaurant site with table enquiries, gallery and location details built for hungry mobile visitors.",
     image: workRestaurant,
+    visit: "https://vebup-demo-resturent.vercel.app/",
     tags: ["Menu", "Reservations", "Local SEO"],
   },
   {
     slug: "luxe-studio",
     name: "Luxe Hair Studio",
     category: "Salon",
-    description:
-      "A calm, editorial salon concept with a service price list and an appointment request flow.",
+    description: "A calm, editorial salon concept with a service price list and an appointment request flow.",
     image: workSalon,
+    visit: "https://vebup-demo-beauty.vercel.app/",
     tags: ["Booking flow", "Price list", "Gallery"],
   },
   {
     slug: "ironline-fitness",
     name: "Ironline Fitness",
     category: "Gym",
-    description:
-      "A high-energy gym concept featuring class timetables, membership plans and trial sign-ups.",
+    description: "A high-energy gym concept featuring class timetables, membership plans and trial sign-ups.",
     image: workGym,
+    visit: "https://vebup-demos.vercel.app/",
     tags: ["Timetable", "Memberships", "Lead capture"],
   },
   {
     slug: "aquafix-services",
     name: "AquaFix Home Services",
     category: "Local Service",
-    description:
-      "A trust-first local services site with service areas, quick-quote form and click-to-call throughout.",
+    description: "A trust-first local services site with service areas, quick-quote form and click-to-call throughout.",
     image: workServices,
+    visit: "https://vebup-demo-electronic.vercel.app/",
     tags: ["Quote form", "Service areas", "Click to call"],
   },
   {
     slug: "meera-advisory",
     name: "Meera Advisory",
     category: "Consultant",
-    description:
-      "A refined personal brand site for a consultant, with credentials, case notes and a discovery call CTA.",
+    description: "A refined personal brand site for a consultant, with credentials, case notes and a discovery call CTA.",
     image: workConsultant,
+    visit: "https://vebup-demo-medical.vercel.app/",
     tags: ["Personal brand", "Case notes", "Calendar CTA"],
   },
   {
     slug: "northline-store",
     name: "Northline Store",
     category: "E-commerce",
-    description:
-      "A minimal online store concept with product filtering, a fast cart and a mobile-optimised checkout.",
+    description: "A minimal online store concept with product filtering, a fast cart and a mobile-optimised checkout.",
     image: workEcommerce,
+    visit: "https://vebup-demo-electronic.vercel.app/",
     tags: ["Catalogue", "Cart", "Checkout"],
   },
 ];
@@ -259,47 +293,47 @@ export const plans: Plan[] = [
   {
     name: "Starter",
     audience: "For businesses getting online.",
-    price: "₹7,999",
+    price: "₹2,499",
     priceNote: "Starting at",
     features: [
-      "Up to 5 pages",
-      "Responsive design",
-      "Contact form",
-      "Basic SEO",
-      "Fast performance",
+      "Up to 3 pages",
+      "Mobile-responsive design",
+      "Contact & enquiry form",
+      "Basic SEO setup",
+      "Fast-loading website",
     ],
     cta: "Get Started",
   },
   {
     name: "Growth",
     audience: "For businesses ready to grow.",
-    price: "₹14,999",
+    price: "₹5,499",
     priceNote: "Starting at",
     features: [
-      "Up to 10 pages",
-      "Custom UI/UX",
-      "Advanced animations",
+      "Up to 7 pages",
+      "Custom design",
+      "Lead-focused enquiry flows",
       "SEO setup",
-      "Analytics",
-      "Conversion-focused design",
+      "Analytics integration",
+      "Performance optimisation",
     ],
     cta: "Choose Growth",
     popular: true,
   },
   {
     name: "Premium",
-    audience: "For businesses needing a custom solution.",
-    price: "Let's Talk",
-    priceNote: "Custom scope",
+    audience: "For businesses needing a complete solution.",
+    price: "₹9,999",
+    priceNote: "Starting at",
     features: [
-      "Custom website",
+      "Custom website solution",
       "Advanced functionality",
-      "CMS / integrations",
-      "Advanced SEO",
-      "Performance optimization",
+      "CMS & integrations",
+      "Advanced SEO setup",
+      "Conversion-focused experience",
       "Priority support",
     ],
-    cta: "Contact Us",
+    cta: "Let's Talk",
   },
 ];
 
