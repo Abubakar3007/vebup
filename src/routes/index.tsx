@@ -1,24 +1,68 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { Hero } from "@/components/sections/Hero";
+import { Trust } from "@/components/sections/Trust";
+import { Services } from "@/components/sections/Services";
+import { WhyVebUp } from "@/components/sections/WhyVebUp";
+import { Process } from "@/components/sections/Process";
+import { Portfolio } from "@/components/sections/Portfolio";
+import { Pricing } from "@/components/sections/Pricing";
+import { Faq } from "@/components/sections/Faq";
+import { FinalCta } from "@/components/sections/FinalCta";
+
+const title = "VebUp | Professional Websites for Small Businesses";
+const description =
+  "VebUp designs and develops modern, fast and professional websites for small businesses and growing brands.";
+
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      {
+        name: "keywords",
+        content:
+          "website design, website development, small business website, business website, web design agency, website development India",
+      },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:url", content: "/" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          name: "VebUp",
+          description,
+          url: "https://vebup.in",
+          email: "info@vebup.info",
+          areaServed: "India",
+          serviceType: "Website design and development",
+        }),
+      },
+    ],
+  }),
+  component: Home,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function Home() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Hero />
+      <Trust />
+      <Services />
+      <WhyVebUp />
+      <Process />
+      <Portfolio limit={4} />
+      <Pricing />
+      <Faq />
+      <FinalCta />
+    </>
   );
 }
